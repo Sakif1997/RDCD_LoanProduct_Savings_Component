@@ -17,17 +17,21 @@ public class ProductSetup1stPage_FDR extends methods{
 	public By Nextpage_w = By.name("duration");
 
 	
-	public void FillupFirstProductSetupPage(String ProductName) throws InterruptedException{
-		DropDOwnSelectByVisibleTxt(SelectFDR_dropdown, "মেয়াদী সঞ্চয়(এফ ডি আর)");
-		DropDOwnSelectByVisibleTxt(Prokolpo_drop, "পিডিবিএফ তহবিল");
+	public void FillupFirstProductSetupPage(String ProductName, String Lowest_Ammount, String Highest_Amount, String Gunitok_amount) throws InterruptedException{
+		//DropDOwnSelectByVisibleTxt(SelectFDR_dropdown, "মেয়াদী সঞ্চয়(এফ ডি আর)");
+		DropdownSelectByDivClass(SelectFDR_dropdown, 2);
+		DropdownSelectByDivClass(Prokolpo_drop, 0);
 		Fieldvalue(ProductName_in_bangla, ProductName);
-		DropDOwnSelectByVisibleTxt(ProductMunafaPosting_drop, "ম্যাচুরিটি");
-		DropDOwnSelectByVisibleTxt(MaturityPokriaName_drop, "মুনাফা হার");
-		Fieldvalue(LowestAmmount_in, "1000");
-		Fieldvalue(HighestAmmount_in, "100000");
-		Fieldvalue(Gunitok_in, "1000");
-		DropDOwnSelectByVisibleTxt(ProductGL_Drop, "Fixed Deposit Scheme");
-		DropDOwnSelectByVisibleTxt(MinusGL_Drop, "Honourarium");
+		Thread.sleep(2000);
+		DropdownSelectByDivClass(ProductMunafaPosting_drop, 0);
+		DropdownSelectByDivClass(MaturityPokriaName_drop, 0);
+		Fieldvalue(LowestAmmount_in, Lowest_Ammount);
+		Fieldvalue(HighestAmmount_in, Highest_Amount);
+		Fieldvalue(Gunitok_in, Gunitok_amount);
+		Thread.sleep(2000);
+		DropdownByInput(ProductGL_Drop, "Fixed Deposit Scheme", 2);
+		//DropDOwnSelectByVisibleTxt(ProductGL_Drop, "Fixed Deposit Scheme" );
+		DropdownByInput(MinusGL_Drop, "Honourarium",1);
 		click(SavePage_cl);
 		WaitElement(Nextpage_w);
 	}

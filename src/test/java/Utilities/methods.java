@@ -55,6 +55,14 @@ public class methods {
 		Select select = new Select(getElement(locator));
 		select.selectByVisibleText(text);
 	}
+	public void DropDownCLickSelect(By locator, String text) {
+		click(locator);
+		WebDriverWait element = new WebDriverWait(getDriver(), Duration.ofSeconds(20));
+		element.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		Select select = new Select(getElement(locator));
+		select.selectByVisibleText(text);
+		
+	}
 	public void AlertMessage() {
 		String alertMessage =getDriver().switchTo().alert().getText();
 		System.out.println(alertMessage);
@@ -76,10 +84,29 @@ public class methods {
 	action.keyDown(Keys.ENTER);
 	action.build().perform();
 	}
+	public void DropDownSelectElement(By locator, int serialnumber) {
+		Select	select = new Select(getElement(locator));
+		select.selectByIndex(serialnumber);//
+	}
+	public void SelectByVissibleTxt(By locator, String text) {
+		Select	select = new Select(getElement(locator));
+		select.selectByVisibleText(text);
+	}
 	public void Hover(By locator){
 		Actions action = new Actions(getDriver());
 		action.moveToElement(getElement(locator)).perform();
 	}
+	public void DropdownByInput(By locator, String input, int Listnumber) {
+		click(locator);
+		Fieldvalue(locator, input);
+		Actions action = new Actions(getDriver());
+		for(int i=0; i<Listnumber; i++) {
+			action.keyDown(Keys.ARROW_DOWN);
+		}
+		action.keyDown(Keys.ENTER);
+		action.build().perform();
+	}
+	
 	JavascriptExecutor js;
 	public void ScrollDown() {
 	js = (JavascriptExecutor)getDriver();
@@ -95,6 +122,15 @@ public class methods {
 		// Scrolling down the page till the element is found
 		js.executeScript("arguments[0].scrollIntoView();", locator);
 
+	}
+	public void DropdownSelectByDivClass(By locator, int n) {
+		click(locator);
+		Actions action = new Actions(getDriver());
+		for(int i=0; i<n;i++) {
+		action.keyDown(Keys.ARROW_DOWN);
+		}
+		action.keyDown(Keys.ENTER);
+		action.build().perform();
 	}
 	
 

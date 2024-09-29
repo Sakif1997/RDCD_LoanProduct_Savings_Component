@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 
 public class SavingsProductMake extends methods{
-	public By dashbord_w = By.className("samityName");
+	//public By dashbord_w = By.name("samityName");
 	public By ProshashonikSetup_cl = By.xpath("//span[contains(text(),'প্রশাসনিক সেটআপ')]");
 	public By ProductBabosthapona_cl = By.xpath("//span[contains(text(),'প্রোডাক্ট ব্যবস্থাপনা')]");
 	public By SavingsProductCreateMenu_w_cl = By.xpath("//span[contains(text(),'সঞ্চয়ী প্রোডাক্ট তৈরি')]");
@@ -13,10 +13,10 @@ public class SavingsProductMake extends methods{
 	public By ProductInfoPage_w = By.xpath("//div[@id='demo-simple-select']");
 	
 	
-	public void ProductInfoPAge() throws InterruptedException{
-		WaitElement(dashbord_w);
-		click(ProshashonikSetup_cl);
-		click(ProductBabosthapona_cl);
+	public void ProductInfoPage() throws InterruptedException{
+		//WaitElement(dashbord_w);
+		WaitElementClick(ProshashonikSetup_cl);
+		WaitElementClick(ProductBabosthapona_cl);
 		Thread.sleep(2000);
 		WaitElementClick(SavingsProductCreateMenu_w_cl);
 		WaitElementClick(Saving_ProductInfo_Page_w);

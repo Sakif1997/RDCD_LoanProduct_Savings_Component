@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test.RDCD_DPS_FDR_PRODUCT.Logintest">
+      <class name="Test.RDCD_DPS_FDR_PRODUCT.FDR_Product">
         <methods>
-          <include name="loggedIn"/>
           <include name="setBrowser"/>
           <include name="quitBrowser"/>
+          <include name="ProductSetup"/>
         </methods>
-      </class> <!-- Test.RDCD_DPS_FDR_PRODUCT.Logintest -->
+      </class> <!-- Test.RDCD_DPS_FDR_PRODUCT.FDR_Product -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
