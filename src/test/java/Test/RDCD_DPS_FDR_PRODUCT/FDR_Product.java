@@ -14,13 +14,12 @@ public class FDR_Product extends BrowserSetup {
 	
 	@Test
 	public void ProductSetup() throws InterruptedException{
-		log_in.loggedIn("http://10.11.200.30:3050/login","200000054203", "123", "লোন", null, null);
+		log_in.loggedIn("http://10.11.200.30:3090/login","200000054203", "123", "লোন", null, null);
 		SPM.ProductInfoPage();
 		Firstpage.FillupFirstProductSetupPage("প্রোডাক্ট অটোমেশন", "1000", "100000", "1000");//product Bangla Name, Lowest amount, highest amount, gunitok
-		Secondpage.FillupSecondProductSetupPage("01/02/2020","১২০ মাস", "5", "5.25", "5.50", "5.75", "6", "6.25", "6.50", "6.75", "7", "7.5", null, null, null, null, null);
-	
-	
-	
+		String[] rateValues = { "5", "5.25", "5.50", "5.75", "6", "6.25", "6.50", "6.75", "7", "7.5", null, null, null, null, null };
+		Secondpage.FillupSecondProductSetupPage("01/02/2000","১২০ মাস", 10,rateValues);
+		
 	}
 
 }

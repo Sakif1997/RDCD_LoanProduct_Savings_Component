@@ -15,7 +15,7 @@ public class Logintest extends BrowserSetup {
 		//login.LoggedIn("200000071781", "123", "কোপ",  "ইউজার", null);
 		//for Coop ব্যবহারকারী
 		login.LoggedIn(ID, Password, ComponentName, UserType, DoptorName);
-		Thread.sleep(20000);
+		Thread.sleep(2000);
 
 
 	}

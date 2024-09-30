@@ -25,27 +25,30 @@ public class ProductSetup2ndPage extends methods{
 	public By fifteenYear_in = By.xpath("(//input[@name='profitRate'])[15]");
 	public By NextButton_cl = By.xpath("//button[contains(text(),'পরবর্তী ধাপ')]");
 	
-	public void FillupSecondProductSetupPage(String ActivationDate, String Duration, String Year1,String Year2,String Year3,String Year4,String Year5,String Year6,String Year7,String Year8,String Year9,String Year10,String Year11,String Year12,String Year13, String Year14,String Year15) throws InterruptedException{
+	public void FillupSecondProductSetupPage(String ActivationDate, String DurationMonth, int TotalYear,String...MunafaYearRateList) throws InterruptedException{
 		WaitElement(ProductName_wait);
 		Thread.sleep(2000);
 		Fieldvalue(Date_in, ActivationDate);
-		DropDownCLickSelect(Date_in, Duration);
+		DropDownCLickSelect(timePeriod_dropselect, DurationMonth);
 		//if(Duration=="১২০ মাস")
-		Fieldvalue(FirstYear_in, Year1);
-		Fieldvalue(FirstYear_in, Year2);
-		Fieldvalue(FirstYear_in, Year3);
-		Fieldvalue(FirstYear_in, Year4);
-		Fieldvalue(FirstYear_in, Year5);
-		Fieldvalue(FirstYear_in, Year6);
-		Fieldvalue(FirstYear_in, Year7);
-		Fieldvalue(FirstYear_in, Year8);
-		Fieldvalue(FirstYear_in, Year9);
-		Fieldvalue(FirstYear_in, Year10);
-		Fieldvalue(FirstYear_in, Year11);
-		Fieldvalue(FirstYear_in, Year12);
-		Fieldvalue(FirstYear_in, Year13);
-		Fieldvalue(FirstYear_in, Year14);
-		Fieldvalue(FirstYear_in, Year15);
+		for(int i=0; i<=TotalYear;i++) {
+			Fieldvalue(By.xpath("(//input[@name='profitRate'])["+i+"]"), MunafaYearRateList[i-1]);
+		}
+//		Fieldvalue(FirstYear_in, Year1);
+//		Fieldvalue(SecondYear_in, Year2);
+//		Fieldvalue(ThirdYear_in, Year3);
+//		Fieldvalue(FourthYear_in, Year4);
+//		Fieldvalue(FifthYear_in, Year5);
+//		Fieldvalue(SixYear_in, Year6);
+//		Fieldvalue(SeventhYear_in, Year7);
+//		Fieldvalue(EightYear, Year8);
+//		Fieldvalue(NineYear_in, Year9);
+//		Fieldvalue(TenYear_in, Year10);
+//		Fieldvalue(ElevenYear_in, Year11);
+//		Fieldvalue(TwelveYear, Year12);
+//		Fieldvalue(TherteenYear_in, Year13);
+//		Fieldvalue(forteenYear_in, Year14);
+//		Fieldvalue(fifteenYear_in, Year15);
 		Thread.sleep(2000);
 		click(NextButton_cl);
 
