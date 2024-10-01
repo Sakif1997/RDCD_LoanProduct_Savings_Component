@@ -1,66 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-29T18:20:42 BDT" name="Default suite" finished-at="2024-09-29T18:21:20 BDT" duration-ms="37449">
+  <suite started-at="2024-10-01T16:44:58 BDT" name="Default suite" finished-at="2024-10-01T16:45:40 BDT" duration-ms="42177">
     <groups>
     </groups>
-    <test started-at="2024-09-29T18:20:42 BDT" name="Default test" finished-at="2024-09-29T18:21:20 BDT" duration-ms="37449">
+    <test started-at="2024-10-01T16:44:58 BDT" name="Default test" finished-at="2024-10-01T16:45:40 BDT" duration-ms="42177">
       <class name="Test.RDCD_DPS_FDR_PRODUCT.FDR_Product">
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:Test.RDCD_DPS_FDR_PRODUCT.FDR_Product@3b35a229]" started-at="2024-09-29T18:20:40 BDT" name="setBrowser" finished-at="2024-09-29T18:20:42 BDT" duration-ms="2180" status="PASS">
+        <test-method is-config="true" signature="setBrowser()[pri:0, instance:Test.RDCD_DPS_FDR_PRODUCT.FDR_Product@1e16c0aa]" started-at="2024-10-01T16:44:54 BDT" name="setBrowser" finished-at="2024-10-01T16:44:58 BDT" duration-ms="3333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowser -->
-        <test-method signature="ProductSetup()[pri:0, instance:Test.RDCD_DPS_FDR_PRODUCT.FDR_Product@3b35a229]" started-at="2024-09-29T18:20:42 BDT" name="ProductSetup" finished-at="2024-09-29T18:21:19 BDT" duration-ms="37289" status="FAIL">
-          <exception class="org.openqa.selenium.support.ui.UnexpectedTagNameException">
-            <message>
-              <![CDATA[Element should have been "select" but was "input"
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: driver.version: unknown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "input"
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.Select.<init>(Select.java:49)
-at Utilities.methods.DropDownCLickSelect(methods.java:62)
-at Utilities.ProductSetup2ndPage.FillupSecondProductSetupPage(ProductSetup2ndPage.java:32)
-at Test.RDCD_DPS_FDR_PRODUCT.FDR_Product.ProductSetup(FDR_Product.java:20)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.support.ui.UnexpectedTagNameException -->
+        <test-method signature="ProductSetup()[pri:0, instance:Test.RDCD_DPS_FDR_PRODUCT.FDR_Product@1e16c0aa]" started-at="2024-10-01T16:44:58 BDT" name="ProductSetup" finished-at="2024-10-01T16:45:40 BDT" duration-ms="42034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductSetup -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Test.RDCD_DPS_FDR_PRODUCT.FDR_Product@3b35a229]" started-at="2024-09-29T18:21:20 BDT" name="quitBrowser" finished-at="2024-09-29T18:21:20 BDT" duration-ms="268" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Test.RDCD_DPS_FDR_PRODUCT.FDR_Product@1e16c0aa]" started-at="2024-10-01T16:45:40 BDT" name="quitBrowser" finished-at="2024-10-01T16:45:40 BDT" duration-ms="343" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->

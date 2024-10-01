@@ -49,6 +49,15 @@ public class methods {
 		Select select = new Select(getElement(locator));
 		select.selectByIndex(SerialNumber);
 	}
+	public void DropdownSelectbyKeybord(By locator, int ListNumber) {
+		click(locator);
+		Actions action = new Actions(getDriver());
+		for(int i=0; i<ListNumber; i++) {
+			action.keyDown(Keys.ARROW_DOWN);
+		}
+		action.keyDown(Keys.ENTER);
+		action.build().perform();
+	}
 	public void DropDOwnSelectByVisibleTxt(By locator, String text) {
 		WebDriverWait element = new WebDriverWait(getDriver(), Duration.ofSeconds(20));
 		element.until(ExpectedConditions.visibilityOfElementLocated(locator));
@@ -84,6 +93,15 @@ public class methods {
 	action.keyDown(Keys.ENTER);
 	action.build().perform();
 	}
+//	public void DropdownSelectDiv(By locator, String elementName) {
+//		click(locator);
+//		Actions action = new Actions(getDriver());
+//			action.keyDown(Keys.ARROW_DOWN);
+//			action.keyDown(Keys.ENTER);
+//			action.keyDown(Keys.CONTROL).sendKeys("a").sendKeys("c").keyUp(Keys.CONTROL);
+//			action.build().perform();
+
+//	}
 	public void DropDownSelectElement(By locator, int serialnumber) {
 		Select	select = new Select(getElement(locator));
 		select.selectByIndex(serialnumber);//
@@ -99,6 +117,15 @@ public class methods {
 	public void DropdownByInput(By locator, String input, int Listnumber) {
 		click(locator);
 		Fieldvalue(locator, input);
+		Actions action = new Actions(getDriver());
+		for(int i=0; i<Listnumber; i++) {
+			action.keyDown(Keys.ARROW_DOWN);
+		}
+		action.keyDown(Keys.ENTER);
+		action.build().perform();
+	}
+	public void DropdownByDivKeybord(By locator, int Listnumber) {
+		click(locator);
 		Actions action = new Actions(getDriver());
 		for(int i=0; i<Listnumber; i++) {
 			action.keyDown(Keys.ARROW_DOWN);
