@@ -2,87 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2024-10-01T16:44:58 BDT" name="Default suite" finished-at="2024-10-01T16:45:40 BDT" duration-ms="42177">
+  <suite started-at="2024-10-02T15:39:53 BDT" name="Default suite" finished-at="2024-10-02T15:40:41 BDT" duration-ms="47887">
     <groups>
     </groups>
-    <test started-at="2024-10-01T16:44:58 BDT" name="Default test" finished-at="2024-10-01T16:45:40 BDT" duration-ms="42177">
+    <test started-at="2024-10-02T15:39:53 BDT" name="Default test" finished-at="2024-10-02T15:40:41 BDT" duration-ms="47887">
       <class name="Test.RDCD_DPS_FDR_PRODUCT.FDR_Product">
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:Test.RDCD_DPS_FDR_PRODUCT.FDR_Product@1e16c0aa]" started-at="2024-10-01T16:44:54 BDT" name="setBrowser" finished-at="2024-10-01T16:44:58 BDT" duration-ms="3333" status="PASS">
+        <test-method is-config="true" signature="setBrowser()[pri:0, instance:Test.RDCD_DPS_FDR_PRODUCT.FDR_Product@626abbd0]" started-at="2024-10-02T15:39:50 BDT" name="setBrowser" finished-at="2024-10-02T15:39:53 BDT" duration-ms="3159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowser -->
-        <test-method signature="ProductSetup()[pri:0, instance:Test.RDCD_DPS_FDR_PRODUCT.FDR_Product@1e16c0aa]" started-at="2024-10-01T16:44:58 BDT" name="ProductSetup" finished-at="2024-10-01T16:45:40 BDT" duration-ms="42034" status="PASS">
+        <test-method signature="ProductSetup()[pri:0, instance:Test.RDCD_DPS_FDR_PRODUCT.FDR_Product@626abbd0]" started-at="2024-10-02T15:39:53 BDT" name="ProductSetup" finished-at="2024-10-02T15:40:41 BDT" duration-ms="47692" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductSetup -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Test.RDCD_DPS_FDR_PRODUCT.FDR_Product@1e16c0aa]" started-at="2024-10-01T16:45:40 BDT" name="quitBrowser" finished-at="2024-10-01T16:45:40 BDT" duration-ms="343" status="PASS">
-=======
-  <suite started-at="2024-10-01T01:12:30 BDT" name="Default suite" finished-at="2024-10-01T01:13:05 BDT" duration-ms="35888">
-    <groups>
-    </groups>
-    <test started-at="2024-10-01T01:12:30 BDT" name="Default test" finished-at="2024-10-01T01:13:05 BDT" duration-ms="35888">
-      <class name="Test.RDCD_DPS_FDR_PRODUCT.FDR_Product">
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:Test.RDCD_DPS_FDR_PRODUCT.FDR_Product@14fc5f04]" started-at="2024-10-01T01:12:23 BDT" name="setBrowser" finished-at="2024-10-01T01:12:30 BDT" duration-ms="6757" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="ProductSetup()[pri:0, instance:Test.RDCD_DPS_FDR_PRODUCT.FDR_Product@14fc5f04]" started-at="2024-10-01T01:12:30 BDT" name="ProductSetup" finished-at="2024-10-01T01:13:05 BDT" duration-ms="35376" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: samityName (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52487}, msedge: {msedgedriverVersion: 129.0.2792.65 (7eae50a1bc8e..., userDataDir: C:\Users\User\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52487/devtoo..., se:cdpVersion: 129.0.2792.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 622bbc07f8d39091f5ae5248fbcad855]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: samityName (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52487}, msedge: {msedgedriverVersion: 129.0.2792.65 (7eae50a1bc8e..., userDataDir: C:\Users\User\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52487/devtoo..., se:cdpVersion: 129.0.2792.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 622bbc07f8d39091f5ae5248fbcad855
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at Utilities.methods.WaitElement(methods.java:39)
-at Utilities.SavingsProductMake.ProductInfoPage(SavingsProductMake.java:17)
-at Test.RDCD_DPS_FDR_PRODUCT.FDR_Product.ProductSetup(FDR_Product.java:18)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductSetup -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Test.RDCD_DPS_FDR_PRODUCT.FDR_Product@14fc5f04]" started-at="2024-10-01T01:13:06 BDT" name="quitBrowser" finished-at="2024-10-01T01:13:07 BDT" duration-ms="1542" status="PASS">
->>>>>>> fa3e218f0a9e1e01f73e7b2695fd5f81e1d76db9
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Test.RDCD_DPS_FDR_PRODUCT.FDR_Product@626abbd0]" started-at="2024-10-02T15:40:41 BDT" name="quitBrowser" finished-at="2024-10-02T15:40:43 BDT" duration-ms="1402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->

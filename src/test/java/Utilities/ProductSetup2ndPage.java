@@ -25,7 +25,6 @@ public class ProductSetup2ndPage extends methods{
 	public By forteenYear_in = By.xpath("(//input[@name='profitRate'])[14]");
 	public By fifteenYear_in = By.xpath("(//input[@name='profitRate'])[15]");
 	public By NextButton_cl = By.xpath("//button[contains(text(),'পরবর্তী ধাপ')]");
-<<<<<<< HEAD
 	public By SaveButtonInpopup = By.xpath("//button[contains(text(),'সংরক্ষণ করুন')]");
 	public By ProductSaveButton = By.xpath("//button[@aria-label='সংরক্ষণ করুন']");
 	public void FillupSecondProductSetupPage(String ActivationDate, String Year, int munafayearNumber,String... MunafaRateValues) throws InterruptedException{
@@ -36,33 +35,6 @@ public class ProductSetup2ndPage extends methods{
 		//DropdownSelectbyKeybord(timePeriod_dropselect, DurationYear);
 		//if(Duration=="১২০ মাস")
 		DropDOwnSelectByVisibleTxt(timePeriod_dropselect, Year);
-=======
-	
-	public void FillupSecondProductSetupPage(String ActivationDate, String DurationMonth, int TotalYear,String...MunafaYearRateList) throws InterruptedException{
-		WaitElement(ProductName_wait);
-		Thread.sleep(2000);
-		Fieldvalue(Date_in, ActivationDate);
-		DropDownCLickSelect(timePeriod_dropselect, DurationMonth);
-		//if(Duration=="১২০ মাস")
-		for(int i=0; i<=TotalYear;i++) {
-			Fieldvalue(By.xpath("(//input[@name='profitRate'])["+i+"]"), MunafaYearRateList[i-1]);
-		}
-//		Fieldvalue(FirstYear_in, Year1);
-//		Fieldvalue(SecondYear_in, Year2);
-//		Fieldvalue(ThirdYear_in, Year3);
-//		Fieldvalue(FourthYear_in, Year4);
-//		Fieldvalue(FifthYear_in, Year5);
-//		Fieldvalue(SixYear_in, Year6);
-//		Fieldvalue(SeventhYear_in, Year7);
-//		Fieldvalue(EightYear, Year8);
-//		Fieldvalue(NineYear_in, Year9);
-//		Fieldvalue(TenYear_in, Year10);
-//		Fieldvalue(ElevenYear_in, Year11);
-//		Fieldvalue(TwelveYear, Year12);
-//		Fieldvalue(TherteenYear_in, Year13);
-//		Fieldvalue(forteenYear_in, Year14);
-//		Fieldvalue(fifteenYear_in, Year15);
->>>>>>> fa3e218f0a9e1e01f73e7b2695fd5f81e1d76db9
 		Thread.sleep(2000);
 		click(SaveButton_click);
 		//getDriver().switchTo().alert();

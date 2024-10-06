@@ -10,11 +10,18 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BrowserSetup {
 	private static String BrowserName = System.getProperty("browser", "Edge");
 	private static final ThreadLocal<WebDriver> DRIVER_LOCAL = new ThreadLocal<>();
+	
+	public static ExtentSparkReporter htmlreporter;
+	public static ExtentReports extent;	
+	
 	public static WebDriver getDriver() {
 		return DRIVER_LOCAL.get();
 	}
@@ -46,6 +53,10 @@ public class BrowserSetup {
 	}
 	@BeforeSuite
 	public static synchronized void setBrowser() {
+		htmlreporter = new ExtentSparkReporter("report.html");
+		extent = new ExtentReports();
+		extent.attachReporter(htmlreporter);
+		
 		WebDriver webDriver = getBrowser(BrowserName);
 		webDriver.manage().window().maximize();
 		setDriver(webDriver);
