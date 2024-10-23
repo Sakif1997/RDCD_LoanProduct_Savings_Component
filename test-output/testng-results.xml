@@ -1,21 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-02T15:39:53 BDT" name="Default suite" finished-at="2024-10-02T15:40:41 BDT" duration-ms="47887">
+  <suite started-at="2024-10-23T17:40:53 BDT" name="Default suite" finished-at="2024-10-23T17:41:29 BDT" duration-ms="36079">
     <groups>
     </groups>
-    <test started-at="2024-10-02T15:39:53 BDT" name="Default test" finished-at="2024-10-02T15:40:41 BDT" duration-ms="47887">
+    <test started-at="2024-10-23T17:40:53 BDT" name="Default test" finished-at="2024-10-23T17:41:29 BDT" duration-ms="36079">
       <class name="Test.RDCD_DPS_FDR_PRODUCT.FDR_Product">
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:Test.RDCD_DPS_FDR_PRODUCT.FDR_Product@626abbd0]" started-at="2024-10-02T15:39:50 BDT" name="setBrowser" finished-at="2024-10-02T15:39:53 BDT" duration-ms="3159" status="PASS">
+        <test-method is-config="true" signature="setBrowser()[pri:0, instance:Test.RDCD_DPS_FDR_PRODUCT.FDR_Product@7bbc8656]" started-at="2024-10-23T17:40:51 BDT" name="setBrowser" finished-at="2024-10-23T17:40:53 BDT" duration-ms="2361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowser -->
-        <test-method signature="ProductSetup()[pri:0, instance:Test.RDCD_DPS_FDR_PRODUCT.FDR_Product@626abbd0]" started-at="2024-10-02T15:39:53 BDT" name="ProductSetup" finished-at="2024-10-02T15:40:41 BDT" duration-ms="47692" status="PASS">
+        <test-method signature="ProductSetup()[pri:0, instance:Test.RDCD_DPS_FDR_PRODUCT.FDR_Product@7bbc8656]" started-at="2024-10-23T17:40:53 BDT" name="ProductSetup" finished-at="2024-10-23T17:41:29 BDT" duration-ms="35911" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <div tabindex="0" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-labelledby="demo-simple-select" id="demo-simple-select" class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-182didf" aria-controls="mui-158">...</div> is not clickable at point (1149, 289). Other element would receive the click: <div class="message">...</div>
+  (Session info: MicrosoftEdge=130.0.2849.46)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [fd51e66e6667882bb6ab9dc510cf0ed5, clickElement {id=f.5895023D0B0CC945B020A445EF2DDC88.d.420A68885CB486DD08F776434AB76324.e.300}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 130.0.2849.46, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52728}, msedge: {msedgedriverVersion: 130.0.2849.46 (bf1f0130f43a..., userDataDir: C:\Users\user\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52728/devtoo..., se:cdpVersion: 130.0.2849.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (fd51e66e6667882bb6ab9dc510cf0ed5)] -> xpath: //div[6]//div[1]//div[1]//div[1]]
+Session ID: fd51e66e6667882bb6ab9dc510cf0ed5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div tabindex="0" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-labelledby="demo-simple-select" id="demo-simple-select" class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-182didf" aria-controls="mui-158">...</div> is not clickable at point (1149, 289). Other element would receive the click: <div class="message">...</div>
+  (Session info: MicrosoftEdge=130.0.2849.46)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [fd51e66e6667882bb6ab9dc510cf0ed5, clickElement {id=f.5895023D0B0CC945B020A445EF2DDC88.d.420A68885CB486DD08F776434AB76324.e.300}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 130.0.2849.46, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52728}, msedge: {msedgedriverVersion: 130.0.2849.46 (bf1f0130f43a..., userDataDir: C:\Users\user\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52728/devtoo..., se:cdpVersion: 130.0.2849.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (fd51e66e6667882bb6ab9dc510cf0ed5)] -> xpath: //div[6]//div[1]//div[1]//div[1]]
+Session ID: fd51e66e6667882bb6ab9dc510cf0ed5
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at Utilities.methods.click(methods.java:24)
+at Utilities.methods.DropdownSelectByDivClass(methods.java:154)
+at Utilities.ProductSetup3rdPage.AddingCharge(ProductSetup3rdPage.java:24)
+at Test.RDCD_DPS_FDR_PRODUCT.FDR_Product.ProductSetup(FDR_Product.java:37)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductSetup -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Test.RDCD_DPS_FDR_PRODUCT.FDR_Product@626abbd0]" started-at="2024-10-02T15:40:41 BDT" name="quitBrowser" finished-at="2024-10-02T15:40:43 BDT" duration-ms="1402" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Test.RDCD_DPS_FDR_PRODUCT.FDR_Product@7bbc8656]" started-at="2024-10-23T17:41:30 BDT" name="quitBrowser" finished-at="2024-10-23T17:41:32 BDT" duration-ms="2095" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->

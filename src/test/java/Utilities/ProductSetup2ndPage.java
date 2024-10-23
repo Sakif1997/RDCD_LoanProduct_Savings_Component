@@ -66,7 +66,7 @@ public class ProductSetup2ndPage extends methods{
 		Thread.sleep(2000);
 		WaitElementClick(SaveButtonInpopup);
 		Thread.sleep(2000);
-		WaitElementClick(ProductSaveButton);
+		//WaitElementClick(ProductSaveButton);
 
 	}
 
