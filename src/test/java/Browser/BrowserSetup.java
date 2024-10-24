@@ -63,8 +63,9 @@ public class BrowserSetup {
 	}
 	@AfterSuite
 	public static synchronized void quitBrowser() {
-		extent.flush();
 		getDriver().quit();
+		extent.flush();
+
 	}
 
 	

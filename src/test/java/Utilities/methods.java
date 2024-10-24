@@ -2,8 +2,13 @@ package Utilities;
 import static Browser.BrowserSetup.getDriver;
 
 import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 
+import javax.print.attribute.PrintServiceAttribute;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -158,6 +163,25 @@ public class methods {
 		}
 		action.keyDown(Keys.ENTER);
 		action.build().perform();
+	}
+	public static String captureScreenshot_base64() {
+		TakesScreenshot takesScreenshot =(TakesScreenshot)getDriver();
+		String base64Code =takesScreenshot.getScreenshotAs(OutputType.BASE64);
+		System.out.println("Screenshot saved Succefully");
+		return base64Code;
+	}
+	public static String captureScreenshot(String filename, String FileLocation) {
+		TakesScreenshot takesScreenshot =(TakesScreenshot)getDriver();
+		File sourceFile =takesScreenshot.getScreenshotAs(OutputType.FILE);
+		File destFile = new File(FileLocation +filename);
+		try {
+			FileUtils.copyFile(sourceFile, destFile);
+		}
+		catch(IOException e){
+			e.printStackTrace();
+		}
+		return destFile.getAbsolutePath();
+		
 	}
 	
 
