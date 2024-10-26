@@ -170,18 +170,16 @@ public class methods {
 		System.out.println("Screenshot saved Succefully");
 		return base64Code;
 	}
-	public static String captureScreenshot(String filename, String FileLocation) {
-		TakesScreenshot takesScreenshot =(TakesScreenshot)getDriver();
-		File sourceFile =takesScreenshot.getScreenshotAs(OutputType.FILE);
-		File destFile = new File(FileLocation +filename);
-		try {
-			FileUtils.copyFile(sourceFile, destFile);
-		}
-		catch(IOException e){
-			e.printStackTrace();
-		}
-		return destFile.getAbsolutePath();
-		
+	public static String captureScreenshot(String filename) {
+	    TakesScreenshot takesScreenshot = (TakesScreenshot) getDriver();
+	    File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
+	    File destFile = new File("F:\\office Automation folder\\RDCD_LoanProduct_Savings_Component\\Screenshot" + File.separator + filename);
+	    try {
+	        FileUtils.copyFile(sourceFile, destFile);
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
+	    return destFile.getAbsolutePath();
 	}
 	
 

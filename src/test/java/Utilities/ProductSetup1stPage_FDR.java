@@ -2,6 +2,12 @@ package Utilities;
 
 import org.openqa.selenium.By;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
+
+import Browser.BrowserSetup;
+
 public class ProductSetup1stPage_FDR extends methods{
 	public By SelectFDR_dropdown = By.xpath("//div[@id='demo-simple-select']");//মেয়াদী সঞ্চয়(এফ ডি আর)
 	public By Prokolpo_drop = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]");
@@ -15,11 +21,16 @@ public class ProductSetup1stPage_FDR extends methods{
 	public By MinusGL_Drop = By.id("demo-simple-select2");//Honourarium
 	public By SavePage_cl = By.xpath("//button[@aria-label='সংরক্ষণ করুন']");
 	public By Nextpage_w = By.name("duration");
+	
 
 	
 	public void FillupFirstProductSetupPage(String ProductName, String Lowest_Ammount, String Highest_Amount, String Gunitok_amount) throws InterruptedException{
 		//DropDOwnSelectByVisibleTxt(SelectFDR_dropdown, "মেয়াদী সঞ্চয়(এফ ডি আর)");
+		Thread.sleep(2000);
 		DropdownSelectByDivClass(SelectFDR_dropdown, 2);
+		ExtentTest test = BrowserSetup.extent.createTest("FDR product select page","FDR Product Setup: 1ststep");
+		test.log(Status.INFO, "Select from Dropdown, Fillup product Name and all related informations");
+        test.pass("Product page appeared", MediaEntityBuilder.createScreenCaptureFromPath(methods.captureScreenshot("Screenshot1.png")).build());
 		DropdownSelectByDivClass(Prokolpo_drop, 0);
 		Fieldvalue(ProductName_in_bangla, ProductName);
 		Thread.sleep(2000);
@@ -32,6 +43,8 @@ public class ProductSetup1stPage_FDR extends methods{
 		DropdownByInput(ProductGL_Drop, "Fixed Deposit Scheme", 2);
 		//DropDOwnSelectByVisibleTxt(ProductGL_Drop, "Fixed Deposit Scheme" );
 		DropdownByInput(MinusGL_Drop, "Honourarium",1);
+        test.pass("FDR first page setup", MediaEntityBuilder.createScreenCaptureFromPath(methods.captureScreenshot("Screenshot2.png")).build());
+		Thread.sleep(2000);
 		click(SavePage_cl);
 		WaitElement(Nextpage_w);
 	}

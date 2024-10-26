@@ -2,6 +2,12 @@ package Utilities;
 
 import org.openqa.selenium.By;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
+
+import Browser.BrowserSetup;
+
 
 public class ProductSetup2ndPage extends methods{
 	public By ProductName_wait = By.name("productName");
@@ -29,6 +35,9 @@ public class ProductSetup2ndPage extends methods{
 	public By ProductSaveButton = By.xpath("//button[@aria-label='সংরক্ষণ করুন']");
 	public void FillupSecondProductSetupPage(String ActivationDate, String Year, int munafayearNumber,String... MunafaRateValues) throws InterruptedException{
 		WaitElement(ProductName_wait);
+		ExtentTest test = BrowserSetup.extent.createTest("প্রোডাক্টের মুনাফা page","FDR Product Setup: 2nd step");
+		test.log(Status.INFO, "fillup প্রোডাক্টের মুনাফা for particular years");
+        test.pass("প্রোডাক্টের মুনাফা page appeared", MediaEntityBuilder.createScreenCaptureFromPath(methods.captureScreenshot("Screenshot3.png")).build());
 		Thread.sleep(2000);
 		Fieldvalue(Date_in, ActivationDate);
 		
@@ -62,7 +71,9 @@ public class ProductSetup2ndPage extends methods{
 //		Fieldvalue(fifteenYear_in, Year15);
 //
 //		Thread.sleep(2000);
+        test.pass("প্রোডাক্টের মুনাফা setup screen", MediaEntityBuilder.createScreenCaptureFromPath(methods.captureScreenshot("Screenshot4.png")).build());
 		click(NextButton_cl);
+        test.pass("প্রোডাক্টের মুনাফা set", MediaEntityBuilder.createScreenCaptureFromPath(methods.captureScreenshot("Screenshot5.png")).build());
 		Thread.sleep(2000);
 		WaitElementClick(SaveButtonInpopup);
 		Thread.sleep(2000);
