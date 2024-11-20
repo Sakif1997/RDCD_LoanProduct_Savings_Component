@@ -85,7 +85,7 @@ Follow these steps to set up the Selenium project using Eclipse:
    - Save `pom.xml` and update Maven: `Maven` → `Update Project`.
    - Create a basic test class under `src/test/java` and run it.
 
-## - [Prerequisites](#prerequisites)
+##  [Prerequisites](#prerequisites)
 
 - **Java Development Kit (JDK)**: Version 7 or higher.
 - **Eclipse IDE** for Java development.
@@ -198,7 +198,7 @@ public class BrowserSetup {
 
 ### 2. **Utilities**
 
-- **File:** `method.java` (and individual page object files)
+#### **File:** `method.java` (and individual page object files)
 
 - Located in the **Utilities** directory, this section contains reusable components and methods for different pages.
 - `method.java` manages generic methods, while page object files are specific to each page's elements.
@@ -488,7 +488,7 @@ public static String captureScreenshot(String filename) {
     return destFile.getAbsolutePath();
 }
 ```
-**File:** `SavingsProductMake.java` 
+#### **File:** `SavingsProductMake.java` 
 
 The `ProductInfoPage` method automates navigation through the application to reach the savings product creation page, where users can input details for a new savings product.
 
@@ -524,7 +524,7 @@ The `ProductSetup1stPage_FDR` class in the **Utilities** package provides method
 5. **Exception Handling:** Includes delays (`Thread.sleep`) to ensure the page is fully loaded before interactions.     
 ![image](https://github.com/user-attachments/assets/81b94540-1f28-44a8-a296-bac565dafddf)
 
-**File:** `ProductSetup2ndPage.java` 
+#### **File:** `ProductSetup2ndPage.java` 
 The `FillupSecondProductSetupPage` method automates filling out the second step of the FDR product setup, focusing on configuring the profit rate (মুনাফা) for specific years.
 ![image](https://github.com/user-attachments/assets/26d559cf-4d53-4cb9-a277-326174b041c8)
 
@@ -578,7 +578,7 @@ The `AddingCharge` method automates the process of setting up charges for the FD
   - Captures screenshots at various steps for detailed reporting.
 ![image](https://github.com/user-attachments/assets/af1e3411-5b14-453f-b7d6-3549be581b5e)  
 
-**File:** `ProductSetup4thPage.java` 
+#### **File:** `ProductSetup4thPage.java` 
 The `ProductSendPage` method automates the fourth step of the FDR product setup by selecting necessary documents for the product and finalizing the setup.
 ![image](https://github.com/user-attachments/assets/a1d9c978-7db6-4b22-a4c6-bd5d05d4fecf)
 
