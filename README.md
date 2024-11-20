@@ -198,7 +198,7 @@ public class BrowserSetup {
 
 ### 2. **Utilities**
 
-**File:** `method.java` (and individual page object files)
+- **File:** `method.java` (and individual page object files)
 
 - Located in the **Utilities** directory, this section contains reusable components and methods for different pages.
 - `method.java` manages generic methods, while page object files are specific to each page's elements.
