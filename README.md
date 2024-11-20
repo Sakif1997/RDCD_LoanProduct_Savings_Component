@@ -1,10 +1,8 @@
-Creating a `README.md` file is crucial for providing a clear overview of your project, making it easier for others (and yourself) to understand the purpose, setup, and usage of the code. Below is a general template you can follow or customize as needed:
 
----
 
 # Project Name
 
-> A short description of your project (what it does, its purpose, etc.)
+সঞ্চয়ী প্রোডাক্ট
 
 ## Table of Contents
 
@@ -21,7 +19,7 @@ Creating a `README.md` file is crucial for providing a clear overview of your pr
 
 # [About the Project](#about-the-project)
 
-The **"Create সঞ্চয়ী প্রোডাক্ট"** project is designed to streamline the management of savings products within a financial system. It provides a user-friendly dashboard where users can create and manage সঞ্চয়ী (savings) products with precision.
+The **"সঞ্চয়ী প্রোডাক্ট"** project is designed to streamline the management of savings products within a financial system. It provides a user-friendly dashboard where users can create and manage সঞ্চয়ী (savings) products with precision.
 
 Users start by logging into the dashboard and navigating to the **প্রোডাক্ট ব্যাবস্থাপনা** (Product Management) section. From there, they can select the desired **সঞ্চয়ের ধরণ** (Type of Savings) and proceed to configure various aspects of the product. This includes:
 
