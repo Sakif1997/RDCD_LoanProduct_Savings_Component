@@ -507,7 +507,7 @@ The `ProductInfoPage` method automates navigation through the application to rea
   - No logging or screenshots are captured in this method, focusing purely on navigation within the application.
 ![image](https://github.com/user-attachments/assets/0ca4993d-c01c-4fba-b0ec-9ddab4342f63)
 
-**File:** `ProductSetup1stPage_FDR.java` 
+#### **File:** `ProductSetup1stPage_FDR.java` 
 The `ProductSetup1stPage_FDR` class in the **Utilities** package provides methods and locators to automate the first step of setting up an FDR (Fixed Deposit Receipt) product in a financial application. It extends the `methods` class and includes Selenium locators for various input fields, dropdowns, and buttons required on the first setup page. Additionally, it leverages Extent Reports for logging test steps and capturing screenshots.
 ![image](https://github.com/user-attachments/assets/f774ea5f-e0a9-422e-9661-9b3bcfb30b9b)
 
