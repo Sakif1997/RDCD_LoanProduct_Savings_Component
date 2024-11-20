@@ -93,7 +93,7 @@ Follow these steps to set up the Selenium project using Eclipse:
 - **Google Chrome** browser.
 
 Maven dependencies are managed in `pom.xml`.
-## [Test file information](#testfileinformation)
+# [Test file information](#testfileinformation)
 The following instructions will help you navigate those testing pages. We will create some packages. At the package level, there is a list of classes where you can create methods, use methods for particular pages, and run and test the testing pages separately
 
 - **Set Environment**
