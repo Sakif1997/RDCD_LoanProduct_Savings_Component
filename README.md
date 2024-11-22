@@ -43,16 +43,40 @@ This project simplifies the product creation process, ensuring that all required
 
 Follow these steps to set up the Selenium project using Eclipse:
 
-1. **Install Prerequisites**:
-   - [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html).
-   - [Eclipse IDE](https://www.eclipse.org/downloads/).
 
-2. **Create Maven Project in Eclipse**:
-   - Go to `File` → `New` → `Maven Project`.
-   - Choose an archetype and enter project details.
+## [Prerequisites](#prerequisites)
 
-3. **Configure `pom.xml`**:
-   - Add these dependencies:
+To set up and run this project, ensure the following tools and configurations are in place:
+
+### 1. **Java Development Kit (JDK)**  
+   - Install JDK version 7 or higher.  
+   - Add `JAVA_HOME` to the system's environment variables.  
+
+### 2. **Eclipse IDE**  
+   - Download and install the latest version of Eclipse IDE for Java Developers.  
+   - Configure Eclipse to use the installed JDK.
+
+### 3. **Maven**  
+   - Ensure Maven is integrated with Eclipse for dependency management.  
+   - Verify Maven installation in Eclipse by navigating to `Window` → `Preferences` → `Maven`.  
+
+### 4. **Google Chrome**  
+   - Install the latest version of Google Chrome.  
+   - Download the corresponding [ChromeDriver](https://chromedriver.chromium.org/) version and ensure it is added to the system path.  
+
+---
+
+### **Creating the Project in Eclipse**
+
+1. **Create a New Maven Project**:  
+   - Open Eclipse.  
+   - Navigate to `File` → `New` → `Other...` → Select `Maven Project`.  
+   - Select a suitable archetype (e.g., `maven-archetype-quickstart`).  
+   - Fill in the group ID, artifact ID, and other details.
+
+2. **Configure the `pom.xml` File**:  
+   - After project creation, open `pom.xml`.  
+   - Add the necessary dependencies for Selenium, WebDriver Manager, Allure, and Extent Reports:  
 
      ```xml
      <dependencies>
@@ -79,18 +103,22 @@ Follow these steps to set up the Selenium project using Eclipse:
      </dependencies>
      ```
 
-4. **Build the Project**:
-   - Save `pom.xml` and update Maven: `Maven` → `Update Project`.
-   - Create a basic test class under `src/test/java` and run it.
+   - Save the file and perform a Maven update by selecting `Maven` → `Update Project`.  
 
-##  [Prerequisites](#prerequisites)
+3. **Set Up the Test Project**:  
+   - Create packages and classes under `src/test/java`.  
+   - Use the **Page Object Model (POM)** pattern:  
+     - Create methods for browser setup (e.g., in `BrowserSetup` class).  
+     - Organize page-specific methods in the `Utilities` package.  
+     - Add test cases in a separate package, e.g., `Test.RDCD_DPS_FDR_PRODUCT`.
 
-- **Java Development Kit (JDK)**: Version 7 or higher.
-- **Eclipse IDE** for Java development.
-- **Maven** for dependency management.
-- **Google Chrome** browser.
+4. **Create the TestNG XML Configuration**:  
+   - Define the suite and test classes to run all test cases together.  
 
-Maven dependencies are managed in `pom.xml`.
+5. **Generate Reports**:  
+   - Ensure the Extent Reports dependency is added in `pom.xml`.  
+   - Configure test cases to generate reports upon execution.  
+
 # [Test file information](#testfileinformation)
 The following instructions will help you navigate those testing pages. We will create some packages. At the package level, there is a list of classes where you can create methods, use methods for particular pages, and run and test the testing pages separately
 
