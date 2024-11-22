@@ -7,7 +7,7 @@
 ## Table of Contents
 
 1. [About the Project](#about-the-project)
-2. [Target/Goals](#target/goals)
+2. [Target/Goals](#targetgoals)
 3. [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
 4. [Test File Information](#test-file-information)
@@ -28,7 +28,7 @@ Users start by logging into the dashboard and navigating to the **প্রো�
 - Selecting and uploading necessary documents required for the creation of the savings product.
 
 This project simplifies the product creation process, ensuring that all required information is captured accurately and efficiently, making the system robust and reliable for end-users.
-## [Target/Goals](#target/goals)
+## [Target/Goals](#targetgoals)
 
 ### Automated Test scenario goals for "Create সঞ্চয়ী প্রোডাক্ট" Project:
 
