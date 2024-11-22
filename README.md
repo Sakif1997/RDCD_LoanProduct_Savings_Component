@@ -7,10 +7,10 @@
 ## Table of Contents
 
 1. [About the Project](#about-the-project)
-2. [Target/goals](#target/goals)
+2. [Target/Goals](#target/goals)
 3. [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
-4. [Test file information](#testfileinformation)
+4. [Test File Information](#test-file-information)
 5. [Usage](#usage)
 6. [Report](#report)
 
@@ -28,7 +28,7 @@ Users start by logging into the dashboard and navigating to the **প্রো�
 - Selecting and uploading necessary documents required for the creation of the savings product.
 
 This project simplifies the product creation process, ensuring that all required information is captured accurately and efficiently, making the system robust and reliable for end-users.
-## [Target/goals](#target/goals)
+## [Target/Goals](#target/goals)
 
 ### Automated Test scenario goals for "Create সঞ্চয়ী প্রোডাক্ট" Project:
 
@@ -119,7 +119,7 @@ To set up and run this project, ensure the following tools and configurations ar
    - Ensure the Extent Reports dependency is added in `pom.xml`.  
    - Configure test cases to generate reports upon execution.  
 
-# [Test file information](#testfileinformation)
+# [Test File Information](#test-file-information)
 The following instructions will help you navigate those testing pages. We will create some packages. At the package level, there is a list of classes where you can create methods, use methods for particular pages, and run and test the testing pages separately
 
 - **Set Environment**
