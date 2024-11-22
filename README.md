@@ -12,7 +12,7 @@
     - [Prerequisites](#prerequisites)
 4. [Test file information](#testfileinformation)
 5. [Usage](#usage)
-6. [Report](#contributing)
+6. [Report](#report)
 
 
 
@@ -679,14 +679,14 @@ The `ProductSetup` method orchestrates the full setup process for an FDR (Fixed 
 ![image](https://github.com/user-attachments/assets/8c45cf5a-55a6-4366-ab00-b1d2ddfe66d1)
 
 
-## [Report](#contributing)
+## [Report](#report)
 **Logging & Reporting:**  
   - Uses Extent Reports to log each step of the process, including successful login, setup steps, and completion of the test.  
   - Screenshots are captured and attached where needed.
 
 
 
-The detailed test report can be viewed [here](file:///C:/Users/user/eclipse-workspace/RDCD_DPS_FDR_PRODUCT/report.html).  
+The detailed test report can be viewed [here](file:///C:/Users/user/eclipse-workspace/RDCD_DPS_FDR_PRODUCT/report.html)
 
 ![image](https://github.com/user-attachments/assets/537628a4-8e29-4850-8f84-f4b6a4c94269)
 
