@@ -684,7 +684,7 @@ The `ProductSetup` method orchestrates the full setup process for an FDR (Fixed 
   - Uses Extent Reports to log each step of the process, including successful login, setup steps, and completion of the test.  
   - Screenshots are captured and attached where needed.
 
-
+The detailed test report can be viewed [here](reports/report.html)
 
 The detailed test report can be viewed [here](file:///C:/Users/user/eclipse-workspace/RDCD_DPS_FDR_PRODUCT/report.html)
 
